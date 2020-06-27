@@ -11,11 +11,11 @@ from userbot.utils import admin_cmd
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
     "looks like a custom branch {branch_name} "
-    "is being used:\n"
-    "in this case, Updater is unable to identify the branch to be updated."
-    "please check out to an official branch, and re-start the updater."
+    "hais being used:\n"
+    "hain this case, Updater is unable to identify the branch to be updated."
+    "haplease check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/StarkGang/FridayUserbot"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/jmbots/jmbots"
 BOT_IS_UP_TO_DATE = "Friday userbot is up-to-date!."
 NEW_BOT_UP_DATE_FOUND = (
     "**Friday Update Found For** {branch_name}\n"
@@ -72,7 +72,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("Pulling Update From Branch **master** !!!!")
+        await message.edit("ha Pulling Update From Branch **master** !!!!")
         await asyncio.sleep(8)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -109,7 +109,7 @@ async def updater(message):
                     if i.name == Var.HEROKU_APP_NAME:
                         heroku_app = i
                 if heroku_app is None:
-                    await message.edit("Invalid APP Name. Please set the name of your bot in heroku in the var HEROKU_APP_NAME.")
+                    await message.edit("ha Invalid APP Name. Please set the name of your bot in heroku in the var HEROKU_APP_NAME.")
                     return
                 heroku_git_url = heroku_app.git_url.replace(
                     "https://",
@@ -123,7 +123,7 @@ async def updater(message):
                 asyncio.get_event_loop().create_task(deploy_start(bot, message, HEROKU_GIT_REF_SPEC, remote))
 
             else:
-                await message.edit("Please create the var HEROKU_APP_NAME as the key and the name of your bot in heroku as your value.")
+                await message.edit("ha Please create the var HEROKU_APP_NAME as the key and the name of your bot in heroku as your value.")
                 return
         else:
             await message.edit(NO_HEROKU_APP_CFGD)
@@ -140,7 +140,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("**The Latest Branch** `Master` **Has Been Pushed To Heroku** \n**Now Trying A Restart To Complete Updation Process ⚠️ !!** To Check If I am Alive Just Do `.alive` or `.help` !!!! Thank For Using Friday Userbot Service (◍•ᴗ•◍)❤")
+    await message.edit("**The Latest Branch** `Master` **Has Been Pushed To Heroku** \n**Now ha Trying A Restart To Complete Updation Process ⚠️ !!** To Check If I am Alive Just Do `.alive` or `.help` !!!! Thank For Using Friday Userbot Service (◍•ᴗ•◍)❤")
     await remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
