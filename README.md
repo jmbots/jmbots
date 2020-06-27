@@ -1,7 +1,7 @@
 # FRIDAY
 
 <p align="center">
-<img src="friday.png" alt="JMBOTS USERBOTP">
+//<img src="" alt="JMBOTS USERBOTP">
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
@@ -27,7 +27,7 @@ I THANK INFOTEL FOR THIER FREE VIDEO SERVICE WATCH VIDEO ON HOW TO DEPLOY
 ## Installing Heroku 
 
 ### The Easy Way
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://https://github.com/jmbots/jmbots)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jmbots/jmbots)
 
 
 ### The Normal Way
