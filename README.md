@@ -27,11 +27,8 @@ I THANK INFOTEL FOR THIER FREE VIDEO SERVICE WATCH VIDEO ON HOW TO DEPLOY
 ## Installing Heroku 
 
 ### The Easy Way
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/StarkGang/fridayuserbot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://https://github.com/jmbots/jmbots)
 
-## GET STRING SESSION FROM REPL RUN 
-
-[![Repl.it](https://img.shields.io/badge/REPL%20RUN-Run%20Online-blue.svg)](https://friday.starkgang.repl.run)
 
 ### The Normal Way
 
